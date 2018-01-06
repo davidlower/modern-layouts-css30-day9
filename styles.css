@@ -4,8 +4,8 @@
 }
 
 body {
-   width: 1000px;
-   margin: auto;
+   width: 70%;
+   margin: 0 auto;
    padding: 75px 0;
 
    color: white;
@@ -186,4 +186,35 @@ a:hover {
    float: right;
 
    width: 32%;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 786px) {
+   .layout1-header,
+   .layout1-article,
+   .layout1-aside,
+   .layout1-footer,
+   .layout2-header,
+   .logo,
+   .navbar,
+   .layout2-article,
+   .layout2-aside-left,
+   .layout2-aside-right,
+   .layout2-footer,
+   .layout3-header,
+   .logo2,
+   .navbar2,
+   .layout3-article,
+   .layout3-article-last,
+   .layout3-footer {
+      float: none;
+
+      width: 100%;
+      margin-bottom: 2%;
+   }
+
+   .navbar, .navbar2 {
+      margin-bottom: 30px;
+   }
 }
