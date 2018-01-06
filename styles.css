@@ -1,0 +1,189 @@
+* {
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+body {
+   width: 1000px;
+   margin: auto;
+   padding: 75px 0;
+
+   color: white;
+   background-image: -webkit-gradient(linear, left top, right bottom, from(#011d4e), to(#44259c));
+   background-image: linear-gradient(to bottom right, #011d4e, #44259c);
+
+   font-family: 'Poppins', sans-serif;
+   font-size: 14px;
+   font-weight: 200;
+}
+
+.container {
+   position: relative;
+
+   margin: 0 30px;
+}
+
+h1 {
+   margin-bottom: 75px;
+
+   color: #967be0;
+
+   font-size: 1rem;
+   font-weight: 200;
+}
+
+h2 {
+   margin-bottom: 35px;
+}
+
+.sections {
+   padding: 0 30px;
+}
+
+header, article, aside, footer {
+   width: 100%;
+   margin: 0 0 30px 0;
+
+   background-image: -webkit-gradient(linear, right top, left bottom, from(#967be0), to(#7b64b9));
+   background-image: linear-gradient(to bottom left, #967be0, #7b64b9);
+}
+
+.header-text, .article-text, .aside-text, .footer-text {
+   padding: 30px 0;
+}
+
+span {
+   display: inline-block;
+
+   margin: 1px;
+   padding: 6px 10px;
+
+   border-radius: 3px;
+   background-color: #5529cf;
+
+   font-weight: 400;
+}
+
+.seperator {
+   width: 100%;
+   height: 2px;
+   margin: 100px 0 75px 0;
+
+   background-color: #967be0;
+}
+
+/* LAYOUT SECTION 1 */
+
+.layout1-article {
+   float: left;
+
+   width: 58%;
+}
+
+.layout1-aside {
+   float: right;
+
+   width: 40%;
+}
+
+.layout1-footer, .layout2-footer, .layout3-footer {
+   clear: both;
+}
+
+/* LAYOUT SECTION 2 */
+
+.header-item {
+   display: inline-block;
+
+   margin: 30px 0;
+   padding: 15px 0;
+
+   background-color: #5529cf;
+}
+
+li {
+   display: inline-block;
+
+   padding-right: 30px;
+}
+
+a {
+   text-decoration: none;
+
+   color: white;
+}
+
+a:hover {
+   color: #dcd2f9;
+}
+
+.logo p, .logo2 p {
+   padding: 0 30px;
+}
+
+.logo {
+   float: left;
+
+   width: 20%;
+}
+
+.navbar {
+   display: block;
+   float: right;
+
+   width: 78%;
+}
+
+.layout2-header::after {
+   display: table;
+   clear: both;
+
+   content: "";
+}
+
+.layout2-aside-left {
+   float: left;
+
+   width: 23%;
+   margin-right: 2%;
+}
+
+.layout2-article {
+   float: left;
+
+   width: 50%
+}
+
+.layout2-aside-right {
+   float: right;
+
+   width: 23%;
+}
+
+/* LAYOUT SECTION 3 */
+
+.navbar2 {
+   display: block;
+   float: left;
+
+   width: 78%;
+}
+
+.logo2 {
+   float: right;
+
+   width: 20%;
+}
+
+.layout3-article {
+   float: left;
+
+   width: 32%;
+   margin: 0 2% 30px 0;
+}
+
+.layout3-article-last {
+   float: right;
+
+   width: 32%;
+}
