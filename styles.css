@@ -8,14 +8,12 @@ body {
    max-width: 1000px;
    margin: 0 auto;
    padding: 75px 0;
-
-   color: white;
-   background-image: -webkit-gradient(linear, left top, right bottom, from(#011d4e), to(#44259c));
-   background-image: linear-gradient(to bottom right, #011d4e, #44259c);
-
+   color: #676767;
+   background-color: white;
    font-family: 'Poppins', sans-serif;
    font-size: 14px;
    font-weight: 200;
+   --p-color: #2BFDAC;
 }
 
 .container {
@@ -24,17 +22,9 @@ body {
    margin: 0 30px;
 }
 
-h1 {
-   margin-bottom: 75px;
-
-   color: #967be0;
-
-   font-size: 1rem;
-   font-weight: 200;
-}
-
 h2 {
    margin-bottom: 35px;
+   color: var(--p-color);
 }
 
 .sections {
@@ -44,9 +34,7 @@ h2 {
 header, article, aside, footer {
    width: 100%;
    margin: 0 0 30px 0;
-
-   background-image: -webkit-gradient(linear, right top, left bottom, from(#967be0), to(#7b64b9));
-   background-image: linear-gradient(to bottom left, #967be0, #7b64b9);
+   border: solid 2px var(--p-color);
 }
 
 .header-text, .article-text, .aside-text, .footer-text {
@@ -60,7 +48,7 @@ span {
    padding: 6px 10px;
 
    border-radius: 3px;
-   background-color: #5529cf;
+   background-color: var(--p-color);
 
    font-weight: 400;
 }
@@ -69,8 +57,7 @@ span {
    width: 100%;
    height: 2px;
    margin: 100px 0 75px 0;
-
-   background-color: #967be0;
+   background-color: transparent;
 }
 
 /* LAYOUT SECTION 1 */
@@ -98,24 +85,21 @@ span {
 
    margin: 30px 0;
    padding: 15px 0;
-
-   background-color: #5529cf;
+   border: solid 1px var(--p-color);
 }
 
-li {
+ul li {
    display: inline-block;
-
    padding-right: 30px;
 }
 
-a {
+li a {
    text-decoration: none;
-
-   color: white;
+   color: inherit;
 }
 
-a:hover {
-   color: #dcd2f9;
+li a:hover {
+   color: var(--p-color);
 }
 
 .logo p, .logo2 p {
@@ -188,6 +172,41 @@ a:hover {
 
    width: 32%;
 }
+
+/* BOTTOM NAVIGATION */
+
+.navigation {
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+
+   height: 140px;
+   margin: 0 auto;
+   font-size: 2rem;
+}
+
+a {
+   text-decoration: none;
+
+   color: #e9e9e9;
+}
+
+.navigation a:nth-child(2) {
+   padding: 0 30px;
+}
+
+.navigation a:hover {
+   cursor: pointer;
+
+   color: #c6c6c6;
+}
+
+.navigation a:active {
+   transform: translateY(1px);
+}
+
+
+
 
 /* MEDIA QUERIES */
 
